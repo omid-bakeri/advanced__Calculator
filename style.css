@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "vazir";
+    src: url("fonts/Vazir.ttf");
+}
+
+@font-face {
+    font-family: byekan;
+    src: url("fonts/BYekan+.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    /* justify-self: start;
+    justify-tracks: initial; */
+    justify-content: center;
+    background-image: url("images/calculator.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    float: left;
+    border: 2px solid transparent;
+    /* box-shadow: 5px 3px rgba(24, 24, 24, 0.3); */
+    border-radius: 7px;
+    width: 400px;
+    height: 670px;
+    margin-top: 110px;
+    background-color: white;
+    margin-right: 38%;
+    box-shadow: 3rem 5rem 10rem;
+}
+
+.display {
+    /* float: left; */
+    width: 377px;
+    border-radius: 5px;
+    height: 70px;
+    font-family: "byekan";
+    font-size: 36px;
+    font-weight: 900;
+    padding: 10px;
+    color: rgb(67, 67, 67);
+    text-align: left;
+    box-shadow: 1px 1px 3px rgb(100, 97, 97) inset;
+    font-weight: 500;
+    font-style: bold;
+    background-color: rgb(227, 227, 227);
+    text-transform: capitalize;
+    text-align: left center;
+    margin-top: 20px;
+    margin-left: 2%;
+    border: 1px solid rgb(158, 156, 156);
+}
+
+.warningBox {
+    float: right;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 550px;
+    position: absolute;
+    border-radius: 7px;
+    border-color: transparent;
+    text-align: right;
+    padding: 60px;
+    font-family: "vazir";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: bold;
+    box-shadow: 2px 2px 5px #33415c;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.hidden {
+    display: none;
+}
+
+.warnigBoxText {
+    margin-top: 30px;
+    color: white;
+}
+
+.closeBtn {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: #dbdde1;
+    color: #f30000;
+    margin-top: -40px;
+    /* margin-right: -10px; */
+    margin-left: 200px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: "vazir";
+    font-size: 20px;
+    padding: 20p;
+    text-decoration: blink;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
+
+.confirmWarningButton {
+    width: 80px;
+    height: 50px;
+    background-color: #d4d4d4;
+    color: rgb(82, 79, 79);
+    border: 2px solid rgb(140, 139, 139);
+    border-radius: 5px;
+    margin-right: 110px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "vazir";
+    margin-left: -40px;
+    margin-bottom: 20px;
+    /* transition: 0.4s ease-in; */
+}
+
+.confirmWarningButton:hover {
+    background-color: #8e9aaf;
+    color: white;
+    cursor: pointer;
+}
+
+.confirmWarningButton:active {
+    box-shadow: 2px 2px 5px #33415c;
+    padding: 10px;
+}
+
+.divide {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.multiple {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.minus {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.plus {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.display:active {
+    border: 2px;
+}
+
+.buttons {
+    width: 380px;
+    margin-left: 7px;
+    height: 531px;
+    /* border: 2px solid green; */
+    margin-top: 31px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.c {
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgb(201, 200, 200);
+    user-select: none;
+    float: left;
+    padding: 15px;
+    font-size: 24px;
+    font-style: bold;
+    font-family: "byekan";
+    text-align: center;
+    text-align: center;
+    color: #edf2f4;
+    background-color: #8e9aaf;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(187, 185, 185) inset;
+}
+
+.n {
+    font-size: 30px;
+    padding: 15px;
+    font-weight: 900;
+}
+
+.c:hover {
+    cursor: pointer;
+    background-color: #33415c;
+    transition: 0.5s ease-out;
+    box-shadow: 2px 2px 5px black inset;
+}
+
+.c:active {
+    background-color: aqua;
+    box-shadow: 2px 2px 5px black inset;
+    padding: 20px 10px;
+}
+
+.c39 {
+    width: 150px;
+}
