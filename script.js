@@ -2,16 +2,7 @@
 
 let flag = "";
 
-const one = document.querySelector("#btn32");
-const two = document.querySelector("#btn33");
-const three = document.querySelector("#btn34");
-const four = document.querySelector("#btn27");
-const five = document.querySelector("#btn28");
-const six = document.querySelector("#btn29");
-const seven = document.querySelector("#btn22");
-const eight = document.querySelector("#btn23");
-const nine = document.querySelector("#btn24");
-const zero = document.querySelector("#btn38");
+const mainNumbers = document.querySelectorAll(".main-number");
 const cleaner = document.querySelector("#btn6");
 const back_arrow = document.querySelector("#btn7");
 const sin = document.querySelector("#btn8");
@@ -41,36 +32,18 @@ const minus = document.querySelector("#btn30");
 const divide = document.querySelector("#btn20");
 const multiple = document.querySelector("#btn25");
 
-one.addEventListener("click", function() {
-    display.textContent = display.textContent + one.textContent;
-});
-two.addEventListener("click", function() {
-    display.textContent = display.textContent + two.textContent;
-});
-three.addEventListener("click", function() {
-    display.textContent = display.textContent + three.textContent;
-});
-four.addEventListener("click", function() {
-    display.textContent = display.textContent + four.textContent;
-});
-five.addEventListener("click", function() {
-    display.textContent = display.textContent + five.textContent;
-});
-six.addEventListener("click", function() {
-    display.textContent = display.textContent + six.textContent;
-});
-seven.addEventListener("click", function() {
-    display.textContent = display.textContent + seven.textContent;
-});
-eight.addEventListener("click", function() {
-    display.textContent = display.textContent + eight.textContent;
-});
-nine.addEventListener("click", function() {
-    display.textContent = display.textContent + nine.textContent;
-});
-zero.addEventListener("click", function() {
-    display.textContent = display.textContent + zero.textContent;
-});
+const displayNumber = (numberEl) => {
+    numberEl.addEventListener("click", function() {
+        display.textContent = display.textContent + numberEl.textContent;
+    });
+}
+
+mainNumbers.forEach(element => {
+    element.addEventListener("click", function() {
+        display.textContent = display.textContent + element.textContent;
+    })
+})
+
 
 cleaner.addEventListener("click", function() {
     display.textContent = "";
