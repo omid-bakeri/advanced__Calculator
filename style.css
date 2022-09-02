@@ -1,11 +1,11 @@
 @font-face {
     font-family: "vazir";
-    src: url("fonts/Vazir.ttf");
+    src: url("Vazir.ttf");
 }
 
 @font-face {
     font-family: byekan;
-    src: url("fonts/BYekan+.ttf");
+    src: url("BYekan+.ttf");
 }
 
 * {
@@ -20,7 +20,7 @@ body {
     /* justify-self: start;
     justify-tracks: initial; */
     justify-content: center;
-    background-image: url("images/calculator.png");
+    /* background-image: url(""); */
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
